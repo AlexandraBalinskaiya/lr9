@@ -87,7 +87,7 @@ function addCardToHand(handElement, card) {
     // Якщо вже є картка, замініть її зображення
     let cardImage = handElement.querySelector('.card');
     if (cardImage) {
-        cardImage.src = 'D:/UNIVER/2_kurs/Frontend/lr9/Clubs/' + card.name + '.svg';
+        cardImage.src = card.name + '.svg';
     } else {
         // Якщо картки немає, створіть нову
         cardImage = document.createElement('img');

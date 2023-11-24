@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Стилі контейнерів гравців */
+.players-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    height: 100%;
+}
+/* Стилі контролів гри */
+.game-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Основний контейнер гри */
+.game-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 50px;
+	min-height: 500px;
+}
+/* Стилі кнопки генерації */
+#generate-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4b8bf4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+#generate-button:hover {
+    background-color: #4178d0;
+}
+/* Стилі для карт та інформації про гравців */
+.hand img {
+    width: 450px;
+    height: 650px;
+   
+}
+.name {
+    text-align: center;
+    margin-top: 50px;
+}
+.score {
+    text-align: center;
+    margin-top: auto; 
+}
+/* Стилі для відображення кількості ходів */
+.rounds {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+	width: 100px;
+}
+.hand {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Медіа-запит для планшетів */
+@media (max-width: 768px) {
+    .hand img {
+        width: 300px;
+        height: auto; 
+    }
+    .name, .score {
+        margin-top: 20px;
+    }
+    .game-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .players-container {
+        margin: 0;
+    }
+}
+/* Медіа-запит для мобільних телефонів */
+@media (max-width: 480px) {
+    .hand img {
+        width: 100%; 
+        height: auto;
+    }
+    .game-controls, .players-container {
+        width: 100%;
+    }
+    .game-container {
+        margin-top: 20px; 
+    }
+    #generate-button {
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    .rounds {
+        font-size: 16px;
+    }
+}

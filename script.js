@@ -91,7 +91,7 @@ function addCardToHand(handElement, card) {
     } else {
         // Якщо картки немає, створіть нову
         cardImage = document.createElement('img');
-        cardImage.src = 'Clubs/' + card.name + '.svg';
+        cardImage.src = card.name + '.svg';
         cardImage.classList.add('card');
         handElement.appendChild(cardImage);
     }
